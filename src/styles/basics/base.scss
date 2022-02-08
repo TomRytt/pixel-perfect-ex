@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: montserrat;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	overflow: hidden;
+}
+
+input,
+textarea,
+select {
+	font-family: unset;
+	font-size: 14px;
+	color: unset;
+	transition: all 100ms ease 0s;
+}
+
+select:hover {
+	cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+	margin: 0;
+}
