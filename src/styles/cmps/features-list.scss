@@ -1,0 +1,44 @@
+.features-list {
+	margin-top: 55px;
+	@media (min-width: 768px) {
+		margin-top: 200px;
+		margin-left: 140px;
+	}
+	.feature {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		height: 120px;
+
+		.feature-text {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		span {
+			height: 30px;
+			width: 100%;
+		}
+
+		p {
+			// margin-left: 70px;
+			width: 460px;
+		}
+
+		.imgs-div {
+			position: relative;
+		}
+
+		img {
+			display: flex;
+			margin-right: 20px;
+			align-self: center;
+		}
+
+		@media (min-width: 768px) {
+			width: 540px;
+			height: 100px;
+		}
+	}
+}

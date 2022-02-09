@@ -1,6 +1,7 @@
 import React from 'react';
 import {Routes, Route} from 'react-router-dom';
 import {AppHeader} from './cmps/AppHeader.jsx';
+import {AppFooter} from './cmps/AppFooter.jsx';
 import routes from './routes.js';
 
 export function RootCmp() {
@@ -16,6 +17,9 @@ export function RootCmp() {
 					))}
 				</Routes>
 			</main>
+			<footer>
+				<AppFooter />
+			</footer>
 		</div>
 	);
 }

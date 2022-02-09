@@ -1,0 +1,29 @@
+.cta {
+	background-color: $bg-4;
+	color: $c-4;
+
+	height: 1073px;
+	@media only screen and (min-width: 768px) {
+		height: 200px;
+	}
+
+	.contact-us-btn {
+		height: 48px;
+		width: 153px;
+		border: 1px solid $c-4;
+		border-radius: 2em;
+
+		span {
+			width: 88px;
+			height: 28px;
+			color: $c-4;
+			font-family: 'Livvic - Semi Bold';
+			font-size: 18px;
+			font-weight: 600;
+			font-style: normal;
+			letter-spacing: normal;
+			line-height: 28px;
+			text-align: left;
+		}
+	}
+}

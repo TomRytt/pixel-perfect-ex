@@ -1,0 +1,13 @@
+.app-footer {
+	background-color: #002529;
+
+	height: 423px;
+	width: 100%;
+
+	@media (min-width: 768px) {
+		height: 196px;
+	}
+	.greyed-text {
+		opacity: 0.6;
+	}
+}

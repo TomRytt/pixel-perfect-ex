@@ -4,7 +4,7 @@
 	display: flex;
 }
 
-.flex-column {
+.column {
 	display: flex;
 	flex-direction: column;
 }
@@ -34,18 +34,18 @@
 
 // Main-layout- Grid
 .main-layout {
-	@media (min-width: 768px) {
-		margin: 0 auto;
-		display: grid;
-		grid-template-columns: 1fr;
-		padding-bottom: 50px;
-		width: 100%;
-		overflow-x: hidden;
-		max-height: 95%;
-		margin-bottom: $s-2;
-		padding: $s-2;
+	width: 100%;
+	height: 100vh;
+	// margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
 
-		grid-template-columns: 1fr 960px 1fr;
+	padding: 0 $s-2;
+	// gap: $s-5;
+	margin-bottom: 0;
+
+	@media (min-width: 768px) {
+		grid-template-columns: 165px 1440px 165px;
 		> * {
 			grid-column: 2;
 		}
@@ -53,10 +53,6 @@
 		> *.full {
 			grid-column: 1 / -1;
 		}
-		max-height: 90%;
-		padding: 0;
-		gap: $s-5;
-		margin-bottom: 0;
 	}
 }
 
@@ -136,6 +132,10 @@
 	color: inherit;
 }
 
+.float-left {
+	float: left;
+}
+
 // Others
 
 .hidden {
@@ -154,6 +154,27 @@
 
 .roundImg {
 	border-radius: 50%;
+}
+
+.line {
+	width: 50px;
+	height: 4px;
+}
+
+.li-img {
+	height: 56px;
+	width: 56px;
+	z-index: 1;
+	position: absolute;
+	left: -15%;
+	top: -15%;
+}
+
+.li-circle {
+	height: 56px;
+	width: 56px;
+	position: relative;
+	float: left;
 }
 
 // Buttons
@@ -212,4 +233,14 @@
 	background-color: rgba(0, 0, 0, 0.6);
 	// backdrop-filter: blur(1px);
 	z-index: 5;
+}
+
+// Colors
+
+.red-span {
+	color: $c-2;
+}
+
+.blue-span {
+	color: $c-3;
 }

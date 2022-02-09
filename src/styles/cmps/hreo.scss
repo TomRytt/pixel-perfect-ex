@@ -1,0 +1,45 @@
+.hero {
+	margin-top: 50px;
+
+	main {
+		height: 653px;
+		width: 100%;
+
+		@media only screen and (min-width: 768px) {
+			height: 450px;
+		}
+
+		.main-hero {
+			flex-wrap: nowrap;
+			flex-direction: row;
+		}
+
+		.hero-title-container {
+			width: 327px;
+			margin-right: 30px;
+
+			@media (min-width: 768px) {
+				width: 635px;
+			}
+
+			.hero-title {
+				font-family: Livvic-Bold;
+				text-align: left;
+				margin-right: 30px;
+
+				@media (min-width: 768px) {
+					width: 550px;
+					font-size: 100px;
+					line-height: 100px;
+				}
+			}
+		}
+
+		.hero-text-container {
+			.hero-text {
+				margin-top: 80px;
+				width: 430px;
+			}
+		}
+	}
+}

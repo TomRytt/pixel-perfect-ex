@@ -1,0 +1,38 @@
+.features {
+	background-color: $bg-2;
+
+	height: 1073px;
+	@media only screen and (min-width: 768px) {
+		height: 745px;
+	}
+
+	.left {
+		margin-top: 64px;
+		@media (min-width: 768px) {
+			margin-top: 140px;
+		}
+
+		.title {
+			font-family: Livvic-Bold;
+			text-align: left;
+			font-size: 32px;
+			line-height: 32px;
+			width: 240px;
+			height: 161px;
+
+			@media (min-width: 768px) {
+				width: 445px;
+				height: 145px;
+				line-height: 48px;
+				font-size: 48px;
+			}
+		}
+
+		.red-line {
+			margin-bottom: 32px;
+			@media (min-width: 768px) {
+				margin-bottom: 54px;
+			}
+		}
+	}
+}

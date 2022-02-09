@@ -1,7 +1,5 @@
 .app-header {
-	min-height: 50px;
-	background: #026aa7;
-	color: whitesmoke;
+	min-height: 200px;
 
 	// button {
 	// 	padding-top: $s-2;
@@ -11,148 +9,54 @@
 		height: 100%;
 		padding: 0;
 		justify-content: space-between;
-		width: 100vw;
+		width: 85%;
 		align-items: center;
+		padding: 48px 24px 0;
 
-		@media (min-width: 380px) {
-			padding: 0 $s-2;
+		img {
+			height: 32px;
+			width: 128px;
+		}
+
+		@media (min-width: 768px) {
+			padding: 83px 165px 0;
+			img {
+				height: 40px;
+				width: 160px;
+			}
 		}
 	}
 
 	.left-container {
 		gap: $s-2;
+		height: 100%;
 
-		@media (min-width: 380px) {
-			gap: $s-8;
+		span:first-child {
+			padding-left: 80px;
 		}
-	}
-	.logo-container {
-		margin-left: $s-2;
-	}
-	.logo-container:hover {
-		cursor: pointer;
-		opacity: 0.8;
-	}
 
-	.app-header-span:hover {
-		opacity: 0.8;
-	}
-
-	img {
-		width: 6rem;
-		height: $s-8;
-	}
-
-	@media (min-width: 380px) {
-		img {
-			width: 8rem;
+		span {
+			padding: 0 20px;
 		}
 	}
 
-	.img {
-		height: $s-4;
-		width: $s-4;
-		margin-right: $s-2;
-	}
+	.contact-us-btn {
+		height: 48px;
+		width: 153px;
+		border: 1px solid white;
+		border-radius: 2em;
 
-	ul {
-		padding: 0;
-		display: flex;
-		margin: 0;
-	}
-
-	li {
-		cursor: pointer;
-		margin-left: $s-2;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 44px;
-	}
-
-	@media (min-width: 380px) {
-		li {
-			margin-left: $s-8;
-		}
-	}
-
-	li {
-		display: flex;
-		justify-content: flex-start;
-		justify-content: center;
-		position: relative;
-		margin-left: 0;
-	}
-
-	li:hover {
-		cursor: pointer;
-	}
-
-	.app-header li:hover {
-		opacity: 0.8;
-	}
-
-	// User
-
-	.user-profile-div {
-		position: relative;
-	}
-
-	.user-details {
-		flex-wrap: wrap;
-		margin-bottom: $s-2;
-
-		p {
-			margin: 0;
-		}
-
-		img {
-			height: 32px;
-			width: 32px;
-		}
-	}
-
-	.user-details-text {
-		margin-left: $s-2;
-	}
-	.user-avatar {
-		right: 0;
-		display: flex;
-		align-items: center;
-		position: relative;
-		margin-right: $s-2;
-	}
-
-	.user-avatar-btn {
-		font-weight: 700;
-		cursor: pointer;
-		height: 32px;
-		width: 32px;
-		background-color: darkcyan;
-		border-radius: 50%;
-		color: $b1;
-	}
-
-	.user-modal {
-		z-index: 10;
-		background-color: white;
-		color: $b1;
-		flex-direction: column;
-		min-height: 150px;
-		height: fit-content;
-		width: fit-content;
-		position: absolute;
-		align-items: flex-start;
-		right: 7.5%;
-		top: 130%;
-		min-width: 300px;
-		padding: 0 $s-3 $s-3;
-		border-radius: $s-1;
-		font-weight: normal;
-		box-shadow: 0 8px 16px -4px rgba(9, 30, 66, 0.25), 0 0 0 1px rgba(9, 30, 66, 0.08);
-
-		.logout {
-			padding: $s-2 0;
+		span {
+			width: 88px;
+			height: 28px;
+			color: #ffffff;
+			font-family: 'Livvic - Semi Bold';
+			font-size: 18px;
+			font-weight: 600;
+			font-style: normal;
+			letter-spacing: normal;
+			line-height: 28px;
+			text-align: left;
 		}
 	}
 }
